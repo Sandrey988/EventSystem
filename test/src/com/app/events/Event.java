@@ -1,4 +1,4 @@
-package com.events;
+package com.app.events;
 
 
 public class Event
@@ -8,9 +8,12 @@ public class Event
         MOUSE_MOVED,
         MOUSE_PRESSED,
         MOUSE_RELEASED,
-
     }
+
     private Type type;
+    public boolean handled;
+
+
 
     protected Event(Type type)
     {

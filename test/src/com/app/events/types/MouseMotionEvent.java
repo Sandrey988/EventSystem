@@ -1,6 +1,6 @@
-package com.events.types;
+package com.app.events.types;
 
-import com.events.Event;
+import com.app.events.Event;
 
 public class MouseMotionEvent extends Event
 {
@@ -8,7 +8,7 @@ public class MouseMotionEvent extends Event
     private int x, y;
     private boolean dragged;
 
-    protected MouseMotionEvent(int x, int y, boolean dragged)
+    public MouseMotionEvent(int x, int y, boolean dragged)
     {
         super(Type.MOUSE_MOVED);
         this.x = x;
@@ -21,5 +21,5 @@ public class MouseMotionEvent extends Event
     public int getY() {return y;}
     public boolean isDragged() {return dragged;}
 
-    /** https://youtu.be/OfbH8dJFz6M?t=1278 */
+
 }
